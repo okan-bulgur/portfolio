@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Power of Ingredients</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="icon" href="../../res/power-of-ingredients/images/power_of_ingredients_icon.png" type="image/png">
+</head>
+<body>
+  <header class="navbar"">
+    <img src="../../res/power-of-ingredients/images/power_of_ingredients_icon.png" alt="Project Icon" class="project-icon" />
+    <div class="menu">
+        <a class="outline-button" href="../project.html">Projects</a>
+        <a class="outline-button" href="../../index.html">Home</a>
+    </div>
+    
+</header>
+
+  <main class="project-detail">
+    <h1>Recipe Recommendation App</h1>
+    <p>This app uses a custom algorithm to recommend meals based on what's in your fridge.</p>
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <img src="../../res/power-of-ingredients/images/home.png" alt="Image 1" />
+            <img src="../../res/power-of-ingredients/images/help.png" alt="Image 2" />
+            <img src="../../res/power-of-ingredients/images/settings.png" alt="Image 3" />
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+
+        <div class="dots" id="dots">
+            <!-- Yuvarlak göstergeler JS ile eklenecek -->
+        </div>
+    </div>
+
+    <h2 style="margin-bottom: 1rem;">Demo Video</h2>
+    <video controls class="project-video">
+      <source src="../../res/power-of-ingredients/videos/demo_video.MP4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2 class="project-tech">Technologies Used</h2>
+    <ul class="tech-list">
+     <li>
+        <img src="../../res/images/java.svg" alt="Java" class="tech-icon" />
+        Java
+    </li>
+     <li>
+        <img src="../../res/images/spring-boot.svg" alt="Spring Boot" class="tech-icon" />
+        Spring Boot
+    </li>
+    <li>
+        <img src="../../res/images/flutter.svg" alt="Flutter" class="tech-icon" />
+        Flutter
+    </li>
+     <li>
+        <img src="../../res/images/dart.svg" alt="Dart" class="tech-icon" />
+        Dart
+    </li>
+     <li>
+        <img src="../../res/images/postgresql.svg" alt="PostgreSQL" class="tech-icon" />
+        PostgreSQL
+    </li>
+    <li>
+        <img src="../../res/images/aws-s3.svg" alt="AWS S3" class="tech-icon" />
+        AWS S3
+    </li>
+    </ul>
+
+  </main>
+
+  <script src="../../js/slider.js"></script>
+</body>
+</html>
