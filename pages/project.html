@@ -5,19 +5,20 @@
   <meta charset="UTF-8" />
   <title>Projects - Okan Bulgur</title>
   <link rel="icon" href="../res/images/icon.png" type="image/png">
+  <link rel="stylesheet" href="../css/projects_style.css" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo"> <a href="../index.html">OKI</a> </div>
+      <div class="logo"> <a href="../index.html">OB</a> </div>
       <div class="menu">
         <ul class="nav-links" style="display: flex; gap: 2rem; align-items: center; margin: 0;">
           <li><a href="../index.html"><span class="nav-number">01.</span> About</a></li>
           <li><a href="./experience.html#experience"><span class="nav-number">02.</span> Experiences</a></li>
           <li><a href="./experience.html#education"><span class="nav-number">03.</span> Educations</a></li>
-          <li><a href="../index.html#contact"><span class="nav-number">04.</span> Contact</a></li>
+          <li><a href="#footer"><span class="nav-number">04.</span> Contact</a></li>
         </ul>
         <a class="outline-button" href="../res/okan_bulgur_cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
@@ -28,23 +29,31 @@
     <h1>My Projects</h1>
     <div class="project-grid">
 
-      <div class="project-card">
-        <a href="./projects/power_of_ingredients.html">
+      <a href="./projects/power_of_ingredients.html">
+        <div class="project-card">
           <img src="../res/power-of-ingredients/images/power_of_ingredients_icon.png" alt="Project 1 Thumbnail" />
-          <h2>Recipe Recommendation App</h2>
-          <p>AI-powered app to recommend recipes based on available ingredients.</p>
-        </a>
-      </div>
+          <h2>Power of Ingredients</h2>
+          <p>Recipe recommendation system based on available ingredients</p>
+        </div>
+      </a>
 
-      <div class="project-card">
-        <a href="project-detail.html">
-          <img src="../res/power-of-ingredients/images/power_of_ingredients_icon.png" alt="Project 2 Thumbnail" />
-          <h2>Game Event System</h2>
-          <p>Event-driven gameplay system for Unity with custom tooling.</p>
-        </a>
-      </div>
     </div>
   </main>
+
+  <footer id="footer">
+    <div id="contact" class="social-icons">
+      <a href="https://www.linkedin.com/in/okan-bulgur/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <img src="../../res/images/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/okan-bulgur" target="_blank" rel="noopener noreferrer" aria-label="Github">
+        <img src="../../res/images/github.svg" alt="Github" />
+      </a>
+      <a href="mailto:okanbulgur@gmail.com" aria-label="Email">
+        <img src="../../res/images/email.svg" alt="Email" />
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>
