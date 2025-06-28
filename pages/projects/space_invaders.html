@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/project_details_style.css" />
+    <link rel="stylesheet" href="../../css/slider_style.css" />
+    <link rel="icon" href="../../res/space_invaders/images/icon.png" type="image/jpeg">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <a href="../index.html">OB</a> </div>
+            <div class="menu">
+                <ul class="nav-links" style="display: flex; gap: 2rem; align-items: center; margin: 0">
+                    <li><a href="../../index.html"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="../project.html"><span class="nav-number">02.</span> Projects</a></li>
+                    <li><a href="../experience.html#experience"><span class="nav-number">03.</span> Experiences</a>
+                    </li>
+                    <li><a href="../experience.html#education"><span class="nav-number">04.</span> Educations</a>
+                    </li>
+                    <li><a href="#footer"><span class="nav-number">05.</span> Contact</a>
+                    </li>
+                </ul>
+                <a class="outline-button" href="../../res/okan_bulgur_cv.pdf" target="_blank"
+                    rel="noopener noreferrer">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="project-detail-container">
+        <h1 class="project-title">Space Invaders</h1>
+
+        <div class="project-description">
+            <p>
+                Inspired by the legendary <em>Space Invaders</em>, this game brings a fresh and fun experience with more
+                action, more strategy, and a lot more aliens!
+            </p>
+            <br>
+            <p>
+                You start with a single spaceship, and your goal is simple: destroy as many aliens as possible, collect
+                gold, and chase the highest score. Gold drops randomly while you play — collect enough and you can
+                unlock brand new ships. Each ship has its own personality: different health, speed, bullet styles,
+                firing rates, and damage.
+            </p>
+            <br><br>
+
+            <h4> What makes it special?</h4>
+            <br>
+            <ul>
+                <li>Multiple alien types to keep things interesting</li>
+                <li>Unlockable ships with unique strengths</li>
+                <li>4 exciting power-ups dropped randomly during the game:
+                    <ul>
+                        <li>+1 health</li>
+                        <li>Temporary speed boost</li>
+                        <li>Faster bullet rate</li>
+                        <li>Stronger bullets</li>
+                    </ul>
+                </li>
+                <li>Power-up durations increase as you level up</li>
+            </ul>
+            <br><br>
+
+            <h4>On-screen info while playing:</h4>
+            <br>
+            <ul>
+                <li>Level progress bar (game ends at 100%)</li>
+                <li>Lives remaining</li>
+                <li>Username display</li>
+                <li>Current and highest score</li>
+                <li>Live High Score Table with global ranking</li>
+                <li>In-game notification when a personal high score is broken</li>
+            </ul>
+            <br><br>
+            <p>
+                Whether you're a fan of old-school arcade shooters or just looking for something fast and addictive,
+                this game offers a great mix of retro charm and modern gameplay.
+            </p>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/space_invaders/images/1.jpeg" alt="1" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/space_invaders/images/2.jpeg" alt="2" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/space_invaders/images/3.jpeg" alt="3" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/space_invaders/images/4.jpeg" alt="4" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/space_invaders/images/5.jpeg" alt="5" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/space_invaders/images/6.jpeg" alt="6" class="project-image" />
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav-button prev" onclick="changeSlide(-1)">❮</button>
+            <button class="nav-button next" onclick="changeSlide(1)">❯</button>
+
+            <div class="dots" id="dots"></div>
+        </div>
+
+        <div class="project-tech">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+                <li><img src="../../res/images/java.svg" alt="Java" class="tech-icon" /> Java</li>
+                <li><img src="../../res/images/java.svg" alt="Java Swing" class="tech-icon" /> Java Swing</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="contact" class="social-icons">
+            <a href="https://www.linkedin.com/in/okan-bulgur/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="../../res/images/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/okan-bulgur" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                <img src="../../res/images/github.svg" alt="Github" />
+            </a>
+            <a href="mailto:okanbulgur@gmail.com" aria-label="Email">
+                <img src="../../res/images/email.svg" alt="Email" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="../../js/slider.js"></script>
+</body>
+
+</html>
