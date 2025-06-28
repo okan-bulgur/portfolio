@@ -23,6 +23,10 @@
   margin-bottom: 1rem;
 }
 
+.project-description h4{
+  color: #64ffda;
+}
+
 .tech-list {
   display: flex;
   flex-wrap: wrap;
