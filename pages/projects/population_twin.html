@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Population Twin</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/project_details_style.css" />
+    <link rel="stylesheet" href="../../css/slider_style.css" />
+    <link rel="icon" href="../../res/population_twin/images/icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <a href="../index.html">OB</a> </div>
+            <div class="menu">
+                <ul class="nav-links" style="display: flex; gap: 2rem; align-items: center; margin: 0">
+                    <li><a href="../../index.html"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="../project.html"><span class="nav-number">02.</span> Projects</a></li>
+                    <li><a href="../experience.html#experience"><span class="nav-number">03.</span> Experiences</a>
+                    </li>
+                    <li><a href="../experience.html#education"><span class="nav-number">04.</span> Educations</a>
+                    </li>
+                    <li><a href="#footer"><span class="nav-number">05.</span> Contact</a>
+                    </li>
+                </ul>
+                <a class="outline-button" href="../../res/okan_bulgur_cv.pdf" target="_blank"
+                    rel="noopener noreferrer">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="project-detail-container">
+        <h1 class="project-title">Population Twin</h1>
+
+        <div class="video-section top-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/US6NxRD8Q3c" title="Project Demo Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="project-description">
+            <p>
+                Earthquakes are a serious reality — especially for countries like ours where risk is high.
+                This project aims to make that reality easier to manage using digital technology.
+            </p>
+            <br>
+            <p>
+                We developed a <strong>web-based digital twin</strong> that helps visualize and analyze key information
+                about buildings directly on a map.
+                Things like building type, age, number of floors, fire escape availability, and population density can
+                be added and instantly visualized.
+            </p>
+            <br><br>
+            <h4>What it does:</h4>
+            <br>
+            <ul>
+                <li>Maps out buildings with detailed info</li>
+                <li>Calculates earthquake vulnerability based on building data</li>
+                <li>Updates visuals dynamically to reflect each building’s risk level</li>
+                <li>Exports data in standard XML format for use in other systems (e.g. decision support tools)</li>
+            </ul>
+            <br><br>
+            <h4>Why it matters:</h4>
+            <br>
+            <p>
+                By turning physical data into a digital, interactive format, this app helps city planners, emergency
+                responders, and local authorities
+                make faster and smarter decisions. It also creates a space where everyone — from data collectors to
+                policy makers — can work together more efficiently.
+            </p>
+            <br><br>
+            <blockquote>
+                <strong>Goal:</strong> To help make cities more earthquake ready through better communication, smart
+                data, and visual decision tools.
+            </blockquote>
+
+            <br><br>
+
+            <div class="team-section">
+                <h3>Developed by: <span style="color: #56a8ff;"><a href="https://sites.google.com/view/yeditepeserg"
+                            target="_blank">Yeditepe SERG</a></span></h3>
+                <br>
+                <p>
+                    Learn more about our work on our website:
+                    <a href="https://sites.google.com/view/yeditepeserg" style="color: #56a8ff;"
+                        target="_blank">Yeditepe SERG</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/main.png" alt="Main" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/auth.png" alt="Auth" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/map.png" alt="Map" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/create_building_1.png" alt="Create Building 1"
+                            class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/create_building_2.png" alt="Create Building 2"
+                            class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/building_info.png" alt="Building Info"
+                            class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/export.png" alt="Export" class="project-image" />
+                    </div>
+                </div>
+                <div class="slide active">
+                    <div class="slide-content">
+                        <img src="../../res/population_twin/images/exported_file.png" alt="Exported File"
+                            class="project-image" />
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-button prev" onclick="changeSlide(-1)">❮</button>
+            <button class="nav-button next" onclick="changeSlide(1)">❯</button>
+
+            <div class="dots" id="dots"></div>
+        </div>
+
+        <div class="project-tech">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+                <li><img src="../../res/images/html.svg" alt="HTML" class="tech-icon" /> HTML</li>
+                <li><img src="../../res/images/css.svg" alt="CSS" class="tech-icon" /> CSS</li>
+                <li><img src="../../res/images/js.svg" alt="Js" class="tech-icon" /> Java Script</li>
+                <li><img src="../../res/images/firebase.svg" alt="Firebase" class="tech-icon" /> Firebase</li>
+                <li><img src="../../res/images/open_layers.svg" alt="Open Layers" class="tech-icon" /> Open Layers</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="contact" class="social-icons">
+            <a href="https://www.linkedin.com/in/okan-bulgur/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="../../res/images/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/okan-bulgur" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                <img src="../../res/images/github.svg" alt="Github" />
+            </a>
+            <a href="mailto:okanbulgur@gmail.com" aria-label="Email">
+                <img src="../../res/images/email.svg" alt="Email" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="../../js/slider.js"></script>
+</body>
+
+</html>
